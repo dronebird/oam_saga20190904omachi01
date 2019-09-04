@@ -3,7 +3,7 @@
 ![omachi01preview](https://user-images.githubusercontent.com/416977/64288339-cfd1ed00-cf9c-11e9-907e-43dd03cd3089.jpg)
 
 
-* XYZ tile(Lowest/品質最低レベル 演算時間約30分) **再計算中です**
+* プレビュー用 XYZ tile(Lowest/品質最低レベル 演算時間約30分) **再計算中です**
 https://dronebird.github.io/oam_saga20190904omachi01/xyztile_lowest/{z}/{x}/{y}.png
 
 * on ひなたGIS
