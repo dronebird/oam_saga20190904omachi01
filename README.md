@@ -1,6 +1,7 @@
 ## 九州北部豪雨2019 佐賀大町町空撮
 
-https://dronebird.github.io/oam_saga20190904omachi01/xyztiles_lowest/{z}/{x}/{y}.png
+* XYZ tile(Lowest/品質最低レベル 演算時間約30分)
+https://dronebird.github.io/oam_saga20190904omachi01/xyztile_lowest/{z}/{x}/{y}.png
 
 
 
