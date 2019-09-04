@@ -1,9 +1,15 @@
 ## 九州北部豪雨2019 佐賀大町町空撮
 
+![omachi01preview](https://user-images.githubusercontent.com/416977/64288339-cfd1ed00-cf9c-11e9-907e-43dd03cd3089.jpg)
+
+
 * XYZ tile(Lowest/品質最低レベル 演算時間約30分)
 https://dronebird.github.io/oam_saga20190904omachi01/xyztile_lowest/{z}/{x}/{y}.png
 
+* on ひなたGIS
+https://hgis.pref.miyazaki.lg.jp/hinata/hinata.html#5EfRaVXbUBX8
 
+---
 
 You can use the [editor on GitHub](https://github.com/dronebird/oam_saga20190904omachi01/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
