@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>oam_saga20190904omachi01</title>
+        <meta charset="utf-8" />
+        <style>
+            html, body, #map {
+                height: 100%;
+                margin: 0px;
+                padding: 0px
+            }
+        </style>
+
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+            var map;
+
+            function initialize() {
+                var options = {
+                    zoom: 13,
+                    center: new google.maps.LatLng(33.2114, 130.1),
+                    mapTypeId: google.maps.MapTypeId.SATELLITE
+                };
+
+                map = new google.maps.Map(document.getElementById("map"), options);
+
+                var bounds = {
+                    13: [[7056, 7056], [3293, 3294]],
+                    14: [[14112, 14113], [6587, 6588]],
+                    15: [[28225, 28226], [13175, 13176]],
+                    16: [[56450, 56453], [26350, 26353]],
+                    17: [[112900, 112907], [52701, 52706]],
+                    18: [[225800, 225815], [105402, 105412]],
+                    19: [[451601, 451631], [210805, 210825]],
+                    20: [[903202, 903263], [421611, 421650]],
+                    21: [[1806405, 1806526], [843223, 843300]],
+                    22: [[3612811, 3613052], [1686446, 1686600]]
+                };
+
+                var imageMapType = new google.maps.ImageMapType({
+                    getTileUrl: function(coord, zoom) {
+                        if (zoom < 13 || zoom > 22 ||
+                            bounds[zoom][0][0] > coord.x || coord.x > bounds[zoom][0][1] ||
+                            bounds[zoom][1][0] > coord.y || coord.y > bounds[zoom][1][1]) {
+                            return null;
+                        }
+
+                        return zoom + "/" + coord.x + "/" + coord.y + ".png";
+                    },
+                    tileSize: new google.maps.Size(256, 256)
+                });
+
+                map.overlayMapTypes.push(imageMapType);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </head>
+    <body>
+        <div id="map"></div>
+    </body>
+</html>
